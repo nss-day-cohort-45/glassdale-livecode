@@ -2,16 +2,16 @@ import { getCriminals, useCriminals } from './CriminalProvider.js'
 import { Criminal } from './Criminal.js'
 
 const criminalElement = document.querySelector("#criminalsContainer")
-let criminalCards = ""
+let criminalCards = []
 
 export const CriminalList = () => {
     getCriminals().then( () => {
       let perps = useCriminals()
 
       for (const perp of perps) {
-        criminalCards += Criminal(perp)
+        criminalCards.push(Criminal(perp))
       }
 
-      criminalElement.innerHTML = criminalCards
+      criminalElement.innerHTML = criminalCards.join("")
     })
 }
