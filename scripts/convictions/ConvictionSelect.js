@@ -28,7 +28,7 @@ const render = convictionsCollection => {
             <option value="0">Please select a crime...</option>
             ${
                 convictionsCollection.map((crime) => `
-                  <option value={crime.id}>
+                  <option>
                     ${crime.name}
                   </option>
                 `)

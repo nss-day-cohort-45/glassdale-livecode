@@ -2,9 +2,9 @@ import { getCriminals, useCriminals } from './CriminalProvider.js'
 import { Criminal } from './Criminal.js'
 
 const criminalElement = document.querySelector("#criminalsContainer")
-let criminalCards = []
 
 export const CriminalList = () => {
+    let criminalCards = []
     getCriminals().then( () => {
       let perps = useCriminals()
 
