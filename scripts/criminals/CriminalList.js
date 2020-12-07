@@ -1,6 +1,7 @@
 import { getCriminals, useCriminals } from './CriminalProvider.js'
 import { Criminal } from './Criminal.js'
 import { useConvictions } from "../convictions/ConvictionProvider.js"
+import { useOfficers } from "../officers/OfficerProvider.js"
 
 const criminalElement = document.querySelector("#criminalsContainer")
 const eventHub = document.querySelector(".container")
@@ -28,6 +29,23 @@ eventHub.addEventListener('crimeChosen', event => {
 
       const criminals = useCriminals()
       const matchingCriminals = criminals.filter( (criminal) => criminal.conviction === crime.name)
+
+      render(matchingCriminals)
+  }
+})
+
+eventHub.addEventListener('officerChosen', event => {
+
+  // Use the property you added to the event detail.
+  if (event.detail.officerThatWasChosen !== "0"){
+      /*
+          Filter the criminals application state down to the people that were arrested by the chosen officer
+      */
+      const officers = useOfficers()
+      const officer = officers.find( (officer) => officer.id === parseInt(event.detail.officerThatWasChosen) )
+
+      const criminals = useCriminals()
+      const matchingCriminals = criminals.filter( (criminal) => criminal.arrestingOfficer === officer.name)
 
       render(matchingCriminals)
   }
