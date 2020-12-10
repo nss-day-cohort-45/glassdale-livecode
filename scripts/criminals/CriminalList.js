@@ -2,6 +2,7 @@ import { getCriminals, useCriminals } from './CriminalProvider.js'
 import { Criminal } from './Criminal.js'
 import { useConvictions } from "../convictions/ConvictionProvider.js"
 import { useOfficers } from "../officers/OfficerProvider.js"
+import { AssociatesDialog } from "./AssociatesDialog.js"
 
 const criminalElement = document.querySelector("#criminalsContainer")
 const eventHub = document.querySelector(".container")
@@ -12,7 +13,7 @@ const render = (criminals) => {
     criminalCards.push(Criminal(perp))
   }
 
-  criminalElement.innerHTML = criminalCards.join("")
+  criminalElement.innerHTML = `${criminalCards.join("")} ${AssociatesDialog()}`
 }
 
 // Listen for the custom event you dispatched in ConvictionSelect
