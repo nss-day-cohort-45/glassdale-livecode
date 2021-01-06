@@ -1,81 +1,18 @@
 {
   "notes": [
     {
-      "timestamp": "02/23/20",
-      "author": "Fred Spangle",
-      "text": "This suspect is a mean son of a biscuit eater",
-      "suspect": "Farley Jones",
+      "author": "John Jonson",
+      "text": "This is a note",
+      "criminalId": 1,
+      "timestamp": 1609777575867,
       "id": 1
     },
     {
-      "author": "Joe Shep",
-      "text": "text tetxtext",
-      "suspect": "Sting",
-      "timestamp": 1607373193518,
+      "author": "Sally Struthers",
+      "text": "Def Guilty",
+      "criminalId": 5,
+      "timestamp": 1609777575867,
       "id": 2
-    },
-    {
-      "author": "Christine",
-      "text": "I'm a rock star dev",
-      "suspect": "Gary Glitter",
-      "timestamp": 1607373697598,
-      "id": 3
-    },
-    {
-      "author": "Joe Shep",
-      "text": "This is a really detailed note, isn't it?",
-      "suspect": "Reginald \"Dusty\" Britches",
-      "timestamp": 1607397453680,
-      "id": 4
-    },
-    {
-      "author": "Joe Shep",
-      "text": "Notes are so very important",
-      "suspect": "Bono",
-      "timestamp": 1607397553843,
-      "id": 5
-    },
-    {
-      "author": "Joe Shep",
-      "text": "djdjdididkkmm",
-      "suspect": "Manfred Mann",
-      "timestamp": 1607398755741,
-      "id": 6
-    },
-    {
-      "author": "John Jonson",
-      "text": "dededrfttg",
-      "suspect": "ffrew",
-      "timestamp": 1607398856327,
-      "id": 7
-    },
-    {
-      "author": "Fred Jones",
-      "text": "These suspects are suspicious ",
-      "suspect": "The riddler",
-      "timestamp": 1607442753291,
-      "id": 8
-    },
-    {
-      "author": "Linda C",
-      "text": "New Note!!!",
-      "suspect": "Goober",
-      "timestamp": 1607446459557,
-      "id": 9
-    },
-    {
-      "author": "Joe Shep",
-      "text": "Time for a break!",
-      "suspect": "C45",
-      "timestamp": 1607446871343,
-      "id": 10
-    },
-    {
-      "author": "Bub",
-      "text": "bub",
-      "suspect": "bub",
-      "timestamp": 1607447000337,
-      "id": 11
     }
   ]
 }
