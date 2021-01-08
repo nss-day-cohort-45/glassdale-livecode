@@ -1,5 +1,6 @@
 @import "./criminals.css";
 @import "./notes.css";
+@import "./witnesses.css";
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
 
 /*Typography
@@ -31,4 +32,8 @@ h1,h2,h3,h4,h5,h6 {
 
 .noteListContainer {
   flex: 1
+}
+
+.is-hidden {
+  display: none;
 }

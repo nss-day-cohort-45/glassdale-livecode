@@ -1,0 +1,16 @@
+.statementsContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.statementLabel {
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
+
+.witness {
+  flex-basis: 20%;
+  background-color: aquamarine;
+  margin: 10px;
+  padding: 8px;
+}
